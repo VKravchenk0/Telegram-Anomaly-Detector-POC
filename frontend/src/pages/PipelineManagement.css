@@ -1,0 +1,79 @@
+.pipeline-management {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pipeline-management h1 {
+  margin-bottom: 2rem;
+  color: #4CAF50;
+}
+
+.zone-info {
+  background-color: #2d2d2d;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.zone-info p {
+  margin-bottom: 1rem;
+  color: #aaa;
+}
+
+.coordinates {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.coordinates strong {
+  color: #4CAF50;
+}
+
+.coordinates span {
+  background-color: #3d3d3d;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.zone-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.zone-actions button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.zone-actions button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.zone-actions button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.zone-actions button:last-child {
+  background-color: #666;
+}
+
+.zone-actions button:last-child:hover:not(:disabled) {
+  background-color: #777;
+}
+
+.zone-map {
+  width: 100%;
+  height: 600px;
+  border-radius: 8px;
+  cursor: crosshair;
+}

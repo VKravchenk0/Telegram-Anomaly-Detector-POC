@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: anomaly-detection-service
+  
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: monitoring
+    password: monitoring123
+
+server:
+  port: 8084
+
+detection:
+  source-queue: telegram-events
+  target-queue: anomaly-notifications
+  keywords: warning,alert,urgent
+
+logging:
+  level:
+    ua.edu.ucu.de.fp.monitoring: DEBUG

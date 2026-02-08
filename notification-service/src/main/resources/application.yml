@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: notification-service
+  
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/notification
+    username: monitoring
+    password: monitoring123
+  
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: monitoring
+    password: monitoring123
+
+server:
+  port: 8082
+
+notification:
+  queue:
+    name: anomaly-notifications
+
+logging:
+  level:
+    ua.edu.ucu.de.fp.monitoring: DEBUG
