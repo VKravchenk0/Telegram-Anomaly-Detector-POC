@@ -9,7 +9,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql
       - ./docker/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
     networks:
       - monitoring-network
@@ -59,9 +59,9 @@ services:
       dockerfile: Dockerfile
     container_name: notification-service
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/notification
-      SPRING_DATASOURCE_USERNAME: monitoring
-      SPRING_DATASOURCE_PASSWORD: monitoring123
+      SPRING_R2DBC_URL: r2dbc:postgresql://postgres:5432/notification
+      SPRING_R2DBC_USERNAME: monitoring
+      SPRING_R2DBC_PASSWORD: monitoring123
       SPRING_RABBITMQ_HOST: rabbitmq
       SPRING_RABBITMQ_PORT: 5672
       SPRING_RABBITMQ_USERNAME: monitoring
@@ -82,9 +82,9 @@ services:
       dockerfile: Dockerfile
     container_name: telegram-ingestion-service
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/admin
-      SPRING_DATASOURCE_USERNAME: monitoring
-      SPRING_DATASOURCE_PASSWORD: monitoring123
+      SPRING_R2DBC_URL: r2dbc:postgresql://postgres:5432/notification
+      SPRING_R2DBC_USERNAME: monitoring
+      SPRING_R2DBC_PASSWORD: monitoring123
       SPRING_RABBITMQ_HOST: rabbitmq
       SPRING_RABBITMQ_PORT: 5672
       SPRING_RABBITMQ_USERNAME: monitoring
