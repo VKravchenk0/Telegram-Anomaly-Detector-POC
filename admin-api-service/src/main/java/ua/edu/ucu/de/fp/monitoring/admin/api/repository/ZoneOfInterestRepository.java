@@ -1,8 +1,8 @@
-package ua.edu.ucu.de.fp.monitoring.groupmanagement.repository;
+package ua.edu.ucu.de.fp.monitoring.admin.api.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ua.edu.ucu.de.fp.monitoring.groupmanagement.model.ZoneOfInterest;
+import ua.edu.ucu.de.fp.monitoring.admin.api.model.ZoneOfInterest;
 
 import java.util.Optional;
 

@@ -1,12 +1,12 @@
-package ua.edu.ucu.de.fp.monitoring.groupmanagement;
+package ua.edu.ucu.de.fp.monitoring.admin.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GroupManagementApplication {
+public class AdminApiServiceApplication {
     
     public static void main(String[] args) {
-        SpringApplication.run(GroupManagementApplication.class, args);
+        SpringApplication.run(AdminApiServiceApplication.class, args);
     }
 }

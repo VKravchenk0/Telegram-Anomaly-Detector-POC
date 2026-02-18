@@ -1,10 +1,10 @@
-package ua.edu.ucu.de.fp.monitoring.groupmanagement.repository;
+package ua.edu.ucu.de.fp.monitoring.admin.api.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import ua.edu.ucu.de.fp.monitoring.groupmanagement.model.TelegramGroup;
+import ua.edu.ucu.de.fp.monitoring.admin.api.model.TelegramGroup;
 import org.locationtech.jts.geom.Polygon;
 
 import java.util.List;

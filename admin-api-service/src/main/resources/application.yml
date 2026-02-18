@@ -1,6 +1,6 @@
 spring:
   application:
-    name: group-management-service
+    name: admin-api-service
   
   datasource:
     url: jdbc:postgresql://localhost:5432/admin

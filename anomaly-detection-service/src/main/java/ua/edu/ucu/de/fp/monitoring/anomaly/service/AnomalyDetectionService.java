@@ -36,7 +36,6 @@ public class AnomalyDetectionService {
     
     // Functional predicates for anomaly detection
     private Predicate<String> containsKeyword(String keyword) {
-        log.info("hello");
         return content -> content != null && 
                          content.toLowerCase().contains(keyword.toLowerCase());
     }
@@ -56,7 +55,7 @@ public class AnomalyDetectionService {
     public void processEvent(String message) {
         try {
             TelegramEvent event = jsonMapper.readValue(message, TelegramEvent.class);
-            log.debug("Processing event: {}", event.groupName());
+            log.debug("Processing event: \"{}\" from group \"{}\"", event.content(), event.groupName());
             
             // Functional composition: parse -> filter -> transform -> publish
             Optional.of(event)

@@ -70,7 +70,7 @@ Each service can be run locally:
 
 ```bash
 # Group Management Service
-cd group-management-service
+cd admin-api-service
 mvn spring-boot:run
 
 # Notification Service
@@ -105,7 +105,7 @@ lab-monitoring-system/
 ├── docker-compose.yml
 ├── docker/
 │   └── init-db.sh
-├── group-management-service/        # Spring MVC, JPA, PostGIS
+├── admin-api-service/        # Spring MVC, JPA, PostGIS
 │   ├── src/main/java/.../groupmanagement/
 │   │   ├── controller/              # REST controllers
 │   │   ├── service/                 # Business logic (functional)

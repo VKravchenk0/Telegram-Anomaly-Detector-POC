@@ -6,7 +6,7 @@ A functional reactive data processing pipeline for monitoring Telegram groups wi
 
 - **telegram-ingestion-service**: Reactive Spring service that generates mock Telegram data stream
 - **anomaly-detection-service**: Reactive Java service for keyword-based anomaly detection
-- **group-management-service**: Spring MVC service for managing Telegram groups
+- **admin-api-service**: Spring MVC service for managing Telegram groups
 - **notification-service**: Spring WebFlux service for broadcasting notifications via SSE
 - **frontend**: React-based admin UI with dark theme
 

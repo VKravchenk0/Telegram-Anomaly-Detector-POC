@@ -36,11 +36,11 @@ services:
       timeout: 5s
       retries: 5
 
-  group-management-service:
+  admin-api-service:
     build:
-      context: ./group-management-service
+      context: ./admin-api-service
       dockerfile: Dockerfile
-    container_name: group-management-service
+    container_name: admin-api-service
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/admin
       SPRING_DATASOURCE_USERNAME: monitoring
@@ -125,7 +125,7 @@ services:
     ports:
       - "3000:80"
     depends_on:
-      - group-management-service
+      - admin-api-service
       - notification-service
     networks:
       - monitoring-network

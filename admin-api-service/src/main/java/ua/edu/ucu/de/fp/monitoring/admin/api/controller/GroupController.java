@@ -1,11 +1,11 @@
-package ua.edu.ucu.de.fp.monitoring.groupmanagement.controller;
+package ua.edu.ucu.de.fp.monitoring.admin.api.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ua.edu.ucu.de.fp.monitoring.groupmanagement.model.GroupDTO.*;
-import ua.edu.ucu.de.fp.monitoring.groupmanagement.service.GroupManagementService;
+import ua.edu.ucu.de.fp.monitoring.admin.api.model.GroupDTO.*;
+import ua.edu.ucu.de.fp.monitoring.admin.api.service.GroupManagementService;
 
 import java.util.List;
 

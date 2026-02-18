@@ -13,7 +13,7 @@
     </parent>
     
     <groupId>ua.edu.ucu.de.fp.monitoring</groupId>
-    <artifactId>group-management-service</artifactId>
+    <artifactId>admin-api-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>Group Management Service</name>
     

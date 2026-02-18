@@ -1,4 +1,4 @@
-package ua.edu.ucu.de.fp.monitoring.groupmanagement.model;
+package ua.edu.ucu.de.fp.monitoring.admin.api.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

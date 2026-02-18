@@ -1,4 +1,4 @@
-package ua.edu.ucu.de.fp.monitoring.groupmanagement.service;
+package ua.edu.ucu.de.fp.monitoring.admin.api.service;
 
 import lombok.RequiredArgsConstructor;
 import org.locationtech.jts.geom.Coordinate;
@@ -7,11 +7,11 @@ import org.locationtech.jts.geom.Point;
 import org.locationtech.jts.geom.Polygon;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ua.edu.ucu.de.fp.monitoring.groupmanagement.model.GroupDTO.*;
-import ua.edu.ucu.de.fp.monitoring.groupmanagement.model.TelegramGroup;
-import ua.edu.ucu.de.fp.monitoring.groupmanagement.model.ZoneOfInterest;
-import ua.edu.ucu.de.fp.monitoring.groupmanagement.repository.TelegramGroupRepository;
-import ua.edu.ucu.de.fp.monitoring.groupmanagement.repository.ZoneOfInterestRepository;
+import ua.edu.ucu.de.fp.monitoring.admin.api.model.GroupDTO.*;
+import ua.edu.ucu.de.fp.monitoring.admin.api.model.TelegramGroup;
+import ua.edu.ucu.de.fp.monitoring.admin.api.model.ZoneOfInterest;
+import ua.edu.ucu.de.fp.monitoring.admin.api.repository.TelegramGroupRepository;
+import ua.edu.ucu.de.fp.monitoring.admin.api.repository.ZoneOfInterestRepository;
 
 import java.util.List;
 import java.util.Optional;
